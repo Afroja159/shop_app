@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 //my own imports
 import 'package:shop_app/components/horizontal_listview.dart';
+import 'package:shop_app/components/products.dart';
 
 void main() => runApp(MyApp());
 
@@ -64,8 +65,8 @@ class _HomepageState extends State<Homepage> {
         child: ListView(
           children: <Widget>[
             UserAccountsDrawerHeader(
-              accountName: Text("ABCD"),
-              accountEmail: Text("abcd@gmail.com"),
+              accountName: Text("Afroja Rahman"),
+              accountEmail: Text("arb159@gmail.com"),
               currentAccountPicture: GestureDetector(
                 child: CircleAvatar(
                   backgroundColor: Colors.grey,
@@ -148,6 +149,18 @@ class _HomepageState extends State<Homepage> {
 
           //Horizontal list view begins here
           HorizontalList(),
+
+          //padding widget
+          Padding(
+            padding: const EdgeInsets.all(22.0),
+            child: Text("Recent products"),
+          ),
+
+          //grid view
+          Container(
+            height: 320.0,
+            child: Products(),
+          ),
         ],
       ),
     );

@@ -10,8 +10,32 @@ class HorizontalList extends StatelessWidget {
         children: <Widget>[
           Category(
             image_location: 'images/cats/tshirt.png',
-            image_caption: 'shirt',
-          )
+            image_caption: 'shirts',
+          ),
+          Category(
+            image_location: 'images/cats/dress.jpg',
+            image_caption: 'dress',
+          ),
+          Category(
+            image_location: 'images/cats/formal.jpg',
+            image_caption: 'formal',
+          ),
+          Category(
+            image_location: 'images/cats/informal.png',
+            image_caption: 'informal',
+          ),
+          Category(
+            image_location: 'images/cats/pants.jpg',
+            image_caption: 'pants',
+          ),
+          Category(
+            image_location: 'images/cats/shoe.jpg',
+            image_caption: 'shoes',
+          ),
+          Category(
+            image_location: 'images/cats/accessories.png',
+            image_caption: 'accessories',
+          ),
         ],
       ),
     );
@@ -22,7 +46,10 @@ class Category extends StatelessWidget {
   final String image_location;
   final String image_caption;
 
-  Category({this.image_location, this.image_caption});
+  Category({
+    required this.image_location,
+    required this.image_caption,
+  });
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -37,7 +64,13 @@ class Category extends StatelessWidget {
               width: 100,
               height: 80.0,
             ),
-            subtitle: Text(image_caption),
+            subtitle: Container(
+              alignment: Alignment.topCenter,
+              child: Text(
+                image_caption,
+                style: TextStyle(fontSize: 12.0),
+              ),
+            ),
           ),
         ),
       ),

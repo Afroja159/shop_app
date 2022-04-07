@@ -69,6 +69,14 @@ flutter:
    - images/p3.jpg
    - images/p4.jpg
    - images/cats/tshirt.png
+   - images/cats/dress.jpg
+   - images/cats/formal.jpg
+   - images/cats/informal.png
+   - images/cats/pants.jpg
+   - images/cats/shoe.jpg
+   - images/cats/accessories.png
+   - images/products/blazer1.jpeg
+   - images/products/dress1.jpeg
    
 
   # An image asset can refer to one or more resolution-specific "variants", see
