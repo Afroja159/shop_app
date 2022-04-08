@@ -4,13 +4,13 @@ class HorizontalList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80.0,
+      height: 100.0,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Category(
             image_location: 'images/cats/tshirt.png',
-            image_caption: 'shirts',
+            image_caption: 't-shirts',
           ),
           Category(
             image_location: 'images/cats/dress.jpg',

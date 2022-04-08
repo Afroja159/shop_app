@@ -77,6 +77,12 @@ flutter:
    - images/cats/accessories.png
    - images/products/blazer1.jpeg
    - images/products/dress1.jpeg
+   - images/products/frock1.jpg
+   - images/products/tunic1.jpg
+   - images/products/accessories1.jpg
+   - images/products/tshirt1.jpg
+   - images/products/sandals1.jpg
+   - images/products/accessories2.jpg
    
 
   # An image asset can refer to one or more resolution-specific "variants", see

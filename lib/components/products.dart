@@ -1,4 +1,7 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
+import 'package:shop_app/pages/product_details.dart';
 
 class Products extends StatefulWidget {
   @override
@@ -18,6 +21,42 @@ class _ProductsState extends State<Products> {
       "picture": "images/products/dress1.jpeg",
       "old_price": 26,
       "price": 20,
+    },
+    {
+      "name": "Frock",
+      "picture": "images/products/frock1.jpg",
+      "old_price": 16,
+      "price": 13,
+    },
+    {
+      "name": "Tunic",
+      "picture": "images/products/tunic1.jpg",
+      "old_price": 12,
+      "price": 10,
+    },
+    {
+      "name": "T-Shirt",
+      "picture": "images/products/tshirt1.jpg",
+      "old_price": 8,
+      "price": 6,
+    },
+    {
+      "name": "Candle",
+      "picture": "images/products/accessories1.jpg",
+      "old_price": 3,
+      "price": 2,
+    },
+    {
+      "name": "Ladies sandals",
+      "picture": "images/products/sandals1.jpg",
+      "old_price": 11,
+      "price": 9,
+    },
+    {
+      "name": "Wallet",
+      "picture": "images/products/accessories2.jpg",
+      "old_price": 13,
+      "price": 11,
     },
   ];
   @override
@@ -57,7 +96,14 @@ class Single_prod extends StatelessWidget {
           tag: prod_name,
           child: Material(
             child: InkWell(
-              onTap: () {},
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                  //here we are passing the values of the product to the product details page
+                  builder: (context) => ProductDetails(
+                        product_detail_name: prod_name,
+                        product_detail_old_price: prod_old_price,
+                        product_detail_new_price: prod_price,
+                        product_detail_picture: prod_picture,
+                      ))),
               child: GridTile(
                   footer: Container(
                     color: Colors.white70,
